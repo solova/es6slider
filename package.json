@@ -1,0 +1,51 @@
+{
+  "name": "js-app-starter",
+  "version": "0.0.1",
+  "description": "JS app template",
+  "homepage": "https://github.com/alexfedoseev/js-app-starter",
+  "author": {
+    "name": "Alex Fedoseev",
+    "email": "alex.fedoseev@gmail.com",
+    "url": "http://www.alexfedoseev.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexfedoseev/js-app-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexfedoseev/js-app-starter/issues"
+  },
+  "main": "./dist/app.js",
+  "browser": {},
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.24",
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "connect": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-exit": "0.0.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-myth": "^1.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gulp-webserver": "^0.9.1",
+    "lodash.assign": "^3.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  }
+}

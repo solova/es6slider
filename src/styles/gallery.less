@@ -1,0 +1,105 @@
+.color1 {
+  color: @link;
+}
+
+.color2 {
+  color: @activelink;
+}
+
+.color3 {
+  color: @text;
+}
+
+.color4 {
+  color: @arrowactive;
+}
+
+.color5 {
+  color: @arrow;
+}
+
+.color6 {
+  color: @background;
+}
+
+body {
+  background-color: @background;
+  color: @text;
+  font-family: 'Comfortaa', cursive;
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+.menu {
+  font-size: 2rem;
+  a {
+    display: inline-block;
+    margin: 0 .5rem;
+    color: @link;
+    &:hover {
+      color: @activelink;
+    }
+  }
+}
+
+.controls {
+  margin: .5rem 0;
+  .category {
+    float: left;
+  }
+  .favorites {
+    float: right;
+  }
+  select {
+    border: 0;
+    font-size: 1.4rem;
+    outline: 0;
+    background-color: @background;
+    color: @text;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.preview {
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: silver;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.actions .action {
+  position: absolute;
+  font-size: 8rem;
+  color: fade(@arrow, 50);
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: all 0.25s ease-in-out 0s;
+  &.prev {
+    left: 0;
+    top: 50%;
+    margin-top: -4rem;
+  }
+  &.next {
+    right: 0;
+    top: 50%;
+    margin-top: -4rem;
+  }
+  &.like {
+    bottom: 0;
+    left: 50%;
+    margin-left: -4rem;
+  }
+  &:hover {
+    transform: scale(1.0);
+    color: @arrowactive;
+  }
+}
